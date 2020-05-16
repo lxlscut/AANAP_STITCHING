@@ -31,7 +31,9 @@ class Match:
             pstb = np.array([dst_point.feature_point[i] for (i, _) in match])
 
         self.src_match = psta[:, :2]
+        self.src_match = psta[:, [1, 0]]
         self.dst_match = pstb[:, :2]
+        self.dst_match = pstb[:, [1, 0]]
         return
 
 class FeaturePoint:
