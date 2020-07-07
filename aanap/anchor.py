@@ -1,5 +1,5 @@
 import numpy as np
-import cv2
+
 
 
 def get_anchor(img, anchor_num):
